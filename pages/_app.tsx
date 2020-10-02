@@ -1,7 +1,7 @@
-import '../styles/globals.css'
-
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import React, { useEffect } from "react";
+import "../styles/globals.css";
+function AppContainer({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default AppContainer;

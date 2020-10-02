@@ -1,8 +1,11 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import MapView from "./maps/mapview";
 
-const Home = () => {
-  return <div>Hello World</div>;
+const Index = () => {
+  return (
+    <>
+      <MapView />
+    </>
+  );
 };
 
-export default Home;
+export default Index;
