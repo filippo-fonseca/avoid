@@ -10,7 +10,7 @@ export const Container = styled.div`
   margin-top: -5rem;
   border-top-left-radius: 50px;
   display: flex;
-  position: absolute;
+  position: relative;
 `;
 
 export const LeftButton = styled.button`

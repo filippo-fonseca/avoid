@@ -13,3 +13,5 @@ Project for IvyHacks 2020 (Team Zyndie)
 **Mark Music** - _Full-Stack Engineer, Design_
 
 **Daniel Giacomin** - _Backend Engineer_
+
+___
