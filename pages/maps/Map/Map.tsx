@@ -16,6 +16,7 @@ const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
   const startMap = (): void => {
     if (!map) {
       defaultMapStart();
+      setMarker();
     }
   };
   useEffect(startMap, [map]);
@@ -26,6 +27,11 @@ const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
   };
 
   const initMap = (zoomLevel: number, address: GoogleLatLng): void => {
+    new google.maps.Marker({
+      position: { lat: -25.363, lng: 131.044 },
+      map,
+      title: "Hello World!",
+    });
     if (ref.current) {
       setMap(
         new google.maps.Map(ref.current, {
@@ -44,6 +50,14 @@ const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
         })
       );
     }
+  };
+
+  const setMarker = () => {
+    const marker = new google.maps.Marker({
+      position: { lat: -25.363, lng: 131.044 },
+      map,
+      title: "Hello World!",
+    });
   };
 
   return (
