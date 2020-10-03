@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
-import { DisplayData } from './styles';
+import { HeaderOne } from './styles';
 
 function numberWithCommas(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
-class DataDisplay extends Component {
+interface InputsExpected {
+  data: string;
+}
+
+class DataDisplay extends Component<InputsExpected> {
   state = {
     loading: true,
-    usedData: 0,
+    positive: 0,
+    deaths: 0,
+    hospitalized: 0,
+    recovered: 0,
   };
 
   async componentDidMount() {
@@ -18,15 +25,44 @@ class DataDisplay extends Component {
     const response = await fetch(currentData);
     const data = await response.json();
     console.log(data);
-    this.setState({ usedData: data[0].positive });
+    this.setState({ positive: data[0].positive });
+    this.setState({ deaths: data[0].death });
+    this.setState({ hospitalized: data[0].hospitalizedCurrently });
+    this.setState({ recovered: data[0].recovered });
   }
 
   render() {
-    return (
-      <DisplayData size='100px'>
-        {numberWithCommas(this.state.usedData)}
-      </DisplayData>
-    );
+    const dataUsed = this.props.data;
+    console.log(dataUsed);
+
+    switch (dataUsed) {
+      case 'positive':
+        console.log('works');
+        return (
+          <HeaderOne size='27px'>
+            {numberWithCommas(this.state.positive)}
+          </HeaderOne>
+        );
+        break;
+      case 'deaths':
+        return (
+          <HeaderOne size='27px'>
+            {numberWithCommas(this.state.deaths)}
+          </HeaderOne>
+        );
+      case 'hospitalized':
+        return (
+          <HeaderOne size='27px'>
+            {numberWithCommas(this.state.hospitalized)}
+          </HeaderOne>
+        );
+      case 'recovered':
+        return (
+          <HeaderOne size='27px'>
+            {numberWithCommas(this.state.recovered)}
+          </HeaderOne>
+        );
+    }
   }
 }
 
