@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, ReactNode } from "react";
 import "./App.module.css";
 import Map from "./Map/";
 import { loadMapApi } from "./utils/GoogleMapsUtils";
 
-function MapView() {
+function MapView(props: { children: ReactNode }) {
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
@@ -18,6 +18,8 @@ function MapView() {
       {scriptLoaded && (
         <Map mapType={google.maps.MapTypeId.ROADMAP} mapTypeControl={true} />
       )}
+
+      {props.children}
     </div>
   );
 }

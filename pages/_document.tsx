@@ -8,7 +8,7 @@ const Font = createGlobalStyle`
   }
 `;
 
-class Zyndicate extends Document {
+class Avoid extends Document {
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
@@ -52,4 +52,4 @@ class Zyndicate extends Document {
   }
 }
 
-export default Zyndicate;
+export default Avoid;
