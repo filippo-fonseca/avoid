@@ -1,10 +1,15 @@
 import React from "react";
-import { Container, LeftButton, RightButton, Wrapper } from "./styles";
+import {
+  Container,
+  LeftButton,
+  RightButton,
+  LeftButtonClicked,
+} from "./styles";
 
 const CityToggle = () => {
   return (
     <Container>
-      <LeftButton>Seattle, WA</LeftButton>
+      <LeftButtonClicked>Seattle, WA</LeftButtonClicked>
       <RightButton>New York City, NY</RightButton>
     </Container>
   );

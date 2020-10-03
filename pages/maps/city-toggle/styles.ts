@@ -33,6 +33,26 @@ export const LeftButton = styled.button`
   }
 `;
 
+export const LeftButtonClicked = styled.button`
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: 7vh;
+  width: 50%;
+  font-weight: 800;
+  border: none;
+  background-color: #44ffd2;
+  outline: none;
+
+  &:hover {
+    background-color: #adffec;
+  }
+
+  :focus {
+    background-color: #44ffd2;
+    color: black;
+  }
+`;
+
 export const RightButton = styled.button`
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;

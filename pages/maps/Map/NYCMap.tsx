@@ -9,7 +9,7 @@ interface IMap {
 type GoogleLatLng = google.maps.LatLng;
 type GoogleMap = google.maps.Map;
 
-const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
+const NYCMap: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [map, setMap] = useState<GoogleMap>();
 
@@ -22,7 +22,7 @@ const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
   useEffect(startMap, [map]);
 
   const defaultMapStart = (): void => {
-    const defaultAddress = new google.maps.LatLng(47.606209, -122.332069);
+    const defaultAddress = new google.maps.LatLng(40.71305, -74.00723);
     initMap(10, defaultAddress);
   };
 
@@ -66,4 +66,4 @@ const Map: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
   );
 };
 
-export default Map;
+export default NYCMap;
