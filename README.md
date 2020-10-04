@@ -2,7 +2,7 @@
 
 Project for IvyHacks 2020 (Team Zyndie)
 
-[Hackathon Imformation](https://ivyhacks.devpost.com)
+[Hackathon Information](https://ivyhacks.devpost.com)
 
 ---
 
