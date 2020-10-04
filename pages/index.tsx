@@ -1,8 +1,14 @@
-import DisplaySeattleMap from "./seattlemap";
-import DisplayNYCMap from "./nycmap";
+import React from "react";
+import Dashboard from "./dashboard/Dashboard";
+import Header from "./header/Header";
 
 const Index = () => {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <Header />
+      <Dashboard></Dashboard>;
+    </div>
+  );
 };
 
 export default Index;

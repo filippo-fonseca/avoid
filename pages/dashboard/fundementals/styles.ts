@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface Text {
   size: string;
@@ -23,6 +23,9 @@ interface Container {
   paddingTop?: string;
   marginRight?: string;
   marginBottom?: string;
+  backgroundImage?: string;
+  backgroundSize?: string;
+  cursor?: string;
 }
 
 export const HeaderTwo = styled.p<Text>`
@@ -42,9 +45,12 @@ export const HeaderOne = styled.p<Text>`
 `;
 
 export const ContainerBox = styled.div<Container>`
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: ${(props) => props.backgroundSize};
   background-color: ${(props) => props.color};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
+  cursor: ${(props) => props.cursor};
   margin-right: ${(props) => props.marginRight};
   border-radius: ${(props) => props.borderRadius};
   border-width: ${(props) => props.borderWidth};
@@ -88,7 +94,8 @@ export const ButtonText = styled.p`
 `;
 
 export const TestDiv = styled.div`
-  height: 342px;
+  height: 295px;
+  display: flex;
 `;
 
 interface InputImg {
@@ -138,4 +145,10 @@ export const ContainerBox2 = styled.div<Container>`
   padding-left: ${(props) => props.paddingLeft};
   padding-top: ${(props) => props.paddingTop};
   box-shadow: ${(props) => props.shadowColor};
+`;
+
+export const MapImage = styled.img`
+  src: "https://i.redd.it/og3urc4jd8h41.jpg";
+  height: 100%;
+  width: 100%;
 `;

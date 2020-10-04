@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   ArticleImage,
   ArticleBox,
@@ -7,7 +7,7 @@ import {
   HeaderTwo,
   SizedBox,
   HeaderBox,
-} from './styles';
+} from "./styles";
 
 interface InputsExpected {
   articleUrl: string;
@@ -16,17 +16,17 @@ interface InputsExpected {
 
 class ArticleDisplay extends React.Component<InputsExpected> {
   state = {
-    title: 'loading',
-    description: 'loading',
-    image: 'loading',
-    url: 'loading',
+    title: "loading",
+    description: "loading",
+    image: "loading",
+    url: "loading",
     lengthTitle: 0,
     lengthDescription: 0,
   };
 
   async componentDidMount() {
-    const url = 'https://api.linkpreview.net';
-    const key = '800f33490d9a933350da1f4f2cbcb829' + 'DELETE THIS';
+    const url = "https://api.linkpreview.net";
+    const key = "800f33490d9a933350da1f4f2cbcb829";
 
     const keyValues = {
       key: key,
@@ -34,8 +34,8 @@ class ArticleDisplay extends React.Component<InputsExpected> {
     };
 
     const response = await fetch(url, {
-      method: 'POST',
-      mode: 'cors',
+      method: "POST",
+      mode: "cors",
       body: JSON.stringify(keyValues),
     });
     const data = await response.json();
@@ -49,7 +49,7 @@ class ArticleDisplay extends React.Component<InputsExpected> {
   render() {
     const subtractString = (x) => {
       let trimmedString = x.substring(0, 30);
-      trimmedString = trimmedString + '...';
+      trimmedString = trimmedString + "...";
 
       return trimmedString;
     };
@@ -58,11 +58,11 @@ class ArticleDisplay extends React.Component<InputsExpected> {
         <ArticleBox marginBottom={this.props.marginBottom}>
           <ArticleImage src={this.state.image}></ArticleImage>
           <HeaderBox>
-            <HeaderOne size='18px' color='#313131'>
+            <HeaderOne size="18px" color="#313131">
               {subtractString(this.state.title)}
             </HeaderOne>
-            <SizedBox height='5px' />
-            <HeaderTwo size='15px' color='#313131'>
+            <SizedBox height="5px" />
+            <HeaderTwo size="15px" color="#313131">
               {subtractString(this.state.description)}
             </HeaderTwo>
           </HeaderBox>

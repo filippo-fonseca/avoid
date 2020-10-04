@@ -26,7 +26,7 @@ If you'd like to clone the repo and make changes/review it/provide feedback, fee
 git clone git@github.com:filippo-fonseca/avoid.git
 ```
 
-2. Change dorectories
+2. Change directories
 
 ```
 cd avoid

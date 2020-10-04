@@ -24,7 +24,7 @@ export const RightContainer = styled.div`
   align-self: left;
   border-radius: 30px;
   background-color: #ededed;
-  margin-top: 1%;
+  margin-top: -4.9rem;
 `;
 
 export const RightMiniContainer = styled.div`
@@ -63,4 +63,16 @@ export const MapIcon = styled.svg`
   border-radius: 8px;
   padding: 5px;
   cursor: pointer;
+`;
+
+export const LeftContainer = styled.div`
+  height: 10vh;
+  width: 12%;
+  margin-left: 5%;
+  margin-right: auto;
+  align-self: left;
+  border-radius: 30px;
+  background-image: url("https://i.ibb.co/M83KGCF/logo-1.png");
+  margin-top: 1%;
+  background-size: cover;
 `;
