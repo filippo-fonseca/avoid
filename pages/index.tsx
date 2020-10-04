@@ -1,14 +1,8 @@
-import MapView from "./maps/mapview";
-import CityToggle from "./maps/city-toggle/CityToggle";
+import DisplaySeattleMap from "./seattlemap";
+import DisplayNYCMap from "./nycmap";
 
 const Index = () => {
-  return (
-    <>
-      <MapView>
-        <CityToggle />
-      </MapView>
-    </>
-  );
+  return <div>Hello World</div>;
 };
 
 export default Index;

@@ -1,9 +1,9 @@
 import React, { useEffect, useState, ReactNode } from "react";
 import "./App.module.css";
-import Map from "./Map/";
+import NYCMap from "./Map/NYCMap";
 import { loadMapApi } from "./utils/GoogleMapsUtils";
 
-function MapView(props: { children: ReactNode }) {
+function NYCMapView(props: { children: ReactNode }) {
   const [scriptLoaded, setScriptLoaded] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function MapView(props: { children: ReactNode }) {
   return (
     <div className="map-view">
       {scriptLoaded && (
-        <Map mapType={google.maps.MapTypeId.ROADMAP} mapTypeControl={true} />
+        <NYCMap mapType={google.maps.MapTypeId.ROADMAP} mapTypeControl={true} />
       )}
 
       {props.children}
@@ -24,4 +24,4 @@ function MapView(props: { children: ReactNode }) {
   );
 }
 
-export default MapView;
+export default NYCMapView;

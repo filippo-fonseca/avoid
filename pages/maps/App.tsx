@@ -3,7 +3,7 @@ import "./App.module.css";
 import Map from "./Map/";
 import { loadMapApi } from "./utils/GoogleMapsUtils";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import MapView from "./mapview";
+import MapView from "./seattlemapview";
 
 function App() {
   return (
