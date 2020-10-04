@@ -5,9 +5,16 @@ import CityToggle from "./maps/city-toggle/seattle/CityToggle";
 
 const DisplaySeattleMap = () => {
   return (
-    <SeattleMapView>
-      <CityToggle />
-    </SeattleMapView>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=10YQ_lUpkXGWIJFYv07JC65TatPZTRXrZ"
+        width="1400"
+        height="832"
+      ></iframe>
+      <div>
+        <CityToggle />
+      </div>
+    </div>
   );
 };
 

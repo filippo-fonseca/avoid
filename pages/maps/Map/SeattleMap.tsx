@@ -44,12 +44,21 @@ const SeattleMap: React.FC<IMap> = ({ mapType, mapTypeControl = false }) => {
           draggableCursor: "pointer",
         })
       );
+
+      // either this:
+      new google.maps.Marker({
+        position: { lat: 47.606209, lng: -122.3320694 },
+        map: map,
+        title: "Hello World!",
+      });
     }
   };
 
+  // or this: (for the marker)
+
   const setMarker = () => {
     const marker = new google.maps.Marker({
-      position: { lat: -25.363, lng: 131.044 },
+      position: { lat: 47.606209, lng: -122.3320694 },
       map,
       title: "Hello World!",
     });

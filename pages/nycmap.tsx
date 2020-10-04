@@ -4,9 +4,16 @@ import CityToggle from "./maps/city-toggle/nyc/CityToggle";
 
 const DisplayNYCMap = () => {
   return (
-    <NYCMapView>
-      <CityToggle />
-    </NYCMapView>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=16guXLAS8awdBQrE4G_ONfEcY2YVgswBK"
+        width="1400"
+        height="832"
+      ></iframe>
+      <div>
+        <CityToggle />
+      </div>
+    </div>
   );
 };
 
