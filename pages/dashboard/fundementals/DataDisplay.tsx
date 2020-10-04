@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { HeaderOne } from './styles';
 
-function numberWithCommas(x) {
+const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
+};
 
 interface InputsExpected {
   data: string;
@@ -39,26 +39,26 @@ class DataDisplay extends Component<InputsExpected> {
       case 'positive':
         console.log('works');
         return (
-          <HeaderOne size='27px'>
+          <HeaderOne color='#313131' size='27px'>
             {numberWithCommas(this.state.positive)}
           </HeaderOne>
         );
         break;
       case 'deaths':
         return (
-          <HeaderOne size='27px'>
+          <HeaderOne color='#313131' size='27px'>
             {numberWithCommas(this.state.deaths)}
           </HeaderOne>
         );
       case 'hospitalized':
         return (
-          <HeaderOne size='27px'>
+          <HeaderOne color='#313131' size='27px'>
             {numberWithCommas(this.state.hospitalized)}
           </HeaderOne>
         );
       case 'recovered':
         return (
-          <HeaderOne size='27px'>
+          <HeaderOne color='#313131' size='27px'>
             {numberWithCommas(this.state.recovered)}
           </HeaderOne>
         );
