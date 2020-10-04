@@ -16,7 +16,7 @@ Project for IvyHacks 2020 (Team Zyndie)
 
 ---
 
-## Initialization
+## Initialization and Setup
 
 If you'd like to clone the repo and make changes/review it/provide feedback, feel free to follow the steps outlined below:
 
