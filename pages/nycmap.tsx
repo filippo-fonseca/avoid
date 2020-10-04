@@ -1,6 +1,6 @@
 import React from "react";
 import NYCMapView from "./maps/nycmapview";
-import CityToggle from "./maps/city-toggle/CityToggle";
+import CityToggle from "./maps/city-toggle/nyc/CityToggle";
 
 const DisplayNYCMap = () => {
   return (

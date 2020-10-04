@@ -5,12 +5,15 @@ import {
   RightButton,
   LeftButtonClicked,
 } from "./styles";
+import Link from "next/link";
 
 const CityToggle = () => {
   return (
     <Container>
       <LeftButtonClicked>Seattle, WA</LeftButtonClicked>
-      <RightButton>New York City, NY</RightButton>
+      <Link href="../../../nycmap">
+        <RightButton>New York City, NY</RightButton>
+      </Link>
     </Container>
   );
 };
