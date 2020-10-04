@@ -6,12 +6,14 @@ import {
   HomeIcon,
   RightMiniContainer2,
   MapIcon,
+  LeftContainer,
 } from "./styles";
 import Link from "next/link";
 
 const Header = () => {
   return (
     <Container height="10vh" width="100%">
+      <LeftContainer></LeftContainer>
       <RightContainer>
         <Link href="/">
           <RightMiniContainer>

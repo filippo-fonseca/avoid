@@ -25,6 +25,7 @@ interface Container {
   marginBottom?: string;
   backgroundImage?: string;
   backgroundSize?: string;
+  cursor?: string;
 }
 
 export const HeaderTwo = styled.p<Text>`
@@ -49,6 +50,7 @@ export const ContainerBox = styled.div<Container>`
   background-color: ${(props) => props.color};
   height: ${(props) => props.height};
   width: ${(props) => props.width};
+  cursor: ${(props) => props.cursor};
   margin-right: ${(props) => props.marginRight};
   border-radius: ${(props) => props.borderRadius};
   border-width: ${(props) => props.borderWidth};
@@ -92,7 +94,7 @@ export const ButtonText = styled.p`
 `;
 
 export const TestDiv = styled.div`
-  height: 316px;
+  height: 295px;
   display: flex;
 `;
 
