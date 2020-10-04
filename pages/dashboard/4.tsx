@@ -1,16 +1,17 @@
-import React from 'react';
-import { FlexBoxTwo, MarginedBox } from './styles';
-import LatestArticles from './fundementals/LatestArticles';
-import MoreInfo from './fundementals/MoreInfo';
+import React from "react";
+import { FlexBoxTwo, MarginedBox } from "./styles";
+import LatestArticles from "./fundementals/LatestArticles";
+import MoreInfo from "./fundementals/MoreInfo";
+import Header from "../header/Header";
 
 class ComponentFour extends React.Component {
   render() {
     return (
       <FlexBoxTwo
-        height='50%'
-        width='50%'
-        flexDirection='column'
-        marginRight='21px'
+        height="50%"
+        width="50%"
+        flexDirection="column"
+        marginRight="21px"
       >
         <LatestArticles />
         <MoreInfo />
