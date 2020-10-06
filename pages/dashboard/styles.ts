@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 interface FlexDirection {
-  flexDirection: string;
-  height: string;
-  width: string;
+  flexDirection?: string;
+  height?: string;
+  width?: string;
   marginTop?: string;
   marginBottom?: string;
   marginLeft?: string;
