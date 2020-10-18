@@ -26,7 +26,7 @@ class ArticleDisplay extends React.Component<InputsExpected> {
 
   async componentDidMount() {
     const url = "https://api.linkpreview.net";
-    const key = "8c57bf2c6bc6a24e4cf26a242ceda4c3";
+    const key = "NOP";
 
     const keyValues = {
       key: key,
