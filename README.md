@@ -12,11 +12,11 @@ Project for IvyHacks 2020 (Team Zyndie)
 
 ## Team
 
-**Filippo Fonseca** - _Full-Stack Engineer, Content, Design_
+**Filippo Fonseca** - _Full-Stack Engineer (TypeScript + React), Content, Design_
 
-**Mark Music** - _Full-Stack Engineer, Content, Design_
+**Mark Music** - _Full-Stack Engineer (TypeScript + React) Content, Design_
 
-**Daniel Giacomin** - _Backend Engineer, Content_
+**Daniel Giacomin** - _Backend Engineer (PostgreSQL, GraphQL, ExpressJS), Content_
 
 ---
 
