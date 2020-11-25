@@ -1,8 +1,8 @@
 # Avoid
 
-Project for IvyHacks 2020 (Team Zyndie)
+Project for IvyHacks 2020 (Team Zyndie).
 
-[Hackathon Information](https://ivyhacks.devpost.com)
+[IvyHacks Hackathon Information](https://ivyhacks.devpost.com).
 
 ## Video Demo
 [![](http://img.youtube.com/vi/0rf6-EFg_GQ/0.jpg)](http://www.youtube.com/watch?v=0rf6-EFg_GQ "")
