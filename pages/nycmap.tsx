@@ -1,5 +1,4 @@
 import React from "react";
-import NYCMapView from "./maps/nycmapview";
 import CityToggle from "./maps/city-toggle/nyc/CityToggle";
 import MapHeader from "./header/HeaderMap";
 import { Container, Polygon, FrameDiv } from "../public/css/SeattleMap";
